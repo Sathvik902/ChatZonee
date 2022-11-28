@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CHAT APP...</title>
+</head>
+
+<body>
+
+    <h1>CHAT APP</h1>
+
+    <div class="backdrop"></div>
+    <form action="" class = "modal">
+        <h1 id="title">Welcome</h1>
+        <br>
+        <p id="content">Enter your User name</p>
+        <br>
+        <input type="text" placeholder="Enter your user name">
+        <br>
+        <button>SUBMIT</button>
+    </form>
+
+    <div class="container">
+        <div class="chatbox">
+            <ul id="messagelist">
+                
+            </ul>
+            <form class="Input">
+                <input type="text" placeholder="Type your message...">
+                <button>SEND</button>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="activeusers">
+            <h2>ACTIVE USERS</h2>
+            <ul id="users">
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
