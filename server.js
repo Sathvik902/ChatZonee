@@ -25,14 +25,7 @@ const users = [];
 io.on("connection",(socket)=>{
     console.log("Connected to ",socket.id)
 
-    // socket.on("ping",(data)=>{
-    //     console.log(data,": from ping event")
-    // })
-
-    // io.sockets.emit("message",{
-    //     message:"I love you"
-    // })
-
+    
     socket.on("adduser",(username)=>{
         socket.user = username;
         users.push(username);
