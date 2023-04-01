@@ -4,14 +4,14 @@
   "description": "",
   "main": "client/index.js",
   "scripts": {
-
-    "start": "node server.js"
-    },
+    "start": "nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "nodemon": "^2.0.22",
     "socket.io": "^4.5.4"
   }
 }

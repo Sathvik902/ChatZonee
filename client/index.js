@@ -4,7 +4,7 @@ const socket = io("http://localhost:5000")
 
 const messageform = document.querySelector(".chatbox form")
 const messageList = document.querySelector("#messagelist")
-const userList = document.querySelector("ul#users")
+const userList = document.querySelector("#users")
 const chatboxinput = document.querySelector(".chatbox input")
 const useraddform = document.querySelector(".modal")
 const backdrop = document.querySelector(".backdrop")
@@ -61,10 +61,15 @@ function updateUsers(){
 
     for(let i=0;i<users.length;i++)
     {
-        let node = document.createElement("LI");
+        
+        let node = document.createElement("p");
         let textnode = document.createElement(users[i]);
         node.appendChild(textnode)
         userList.appendChild(node)
+        userList.innerHTML += `
+        <li>
+        <ul>${users[i]}<br></br></ul>
+        </li>`
     }
 }
 function userAddHandler(e){
